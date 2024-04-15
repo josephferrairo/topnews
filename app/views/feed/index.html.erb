@@ -1,0 +1,4 @@
+<% @top_stories.each do |id| %>
+  <% story = details(id: id) %>
+  <%= render partial: "story", locals: { story: story} %>
+<% end %>
